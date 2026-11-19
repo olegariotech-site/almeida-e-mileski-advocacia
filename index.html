@@ -8,6 +8,9 @@
   <meta name="description" content="Prévia institucional de Almeida e Mileski Advocacia. Apresentação das profissionais, áreas jurídicas e formas de atendimento. Conteúdo sujeito à validação.">
   <title>Almeida e Mileski Advocacia — Apresentação do projeto</title>
   <link rel="icon" href="assets/monograma-oficial.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
   <style>
   :root{--ink:#201e1e;--ink-deep:#171616;--ink-soft:#2a2727;--gold:#c9a66e;--gold-lite:#ebd6ad;--bone:#f8f5ee;--cream:#f0ebe1;--muted:#b8afa5;--border:#e0d7c9;--text:#302b28;--serif:Georgia,'Times New Roman',serif;--sans:'Segoe UI',Arial,sans-serif}
   *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;color:var(--text);background:var(--bone);font:400 16px/1.7 var(--sans)}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}button{font:inherit}img{display:block;max-width:100%}.skip{position:absolute;top:-80px;left:15px;padding:10px;background:white;z-index:100}.skip:focus{top:15px}.wrap{width:min(1160px,calc(100% - 52px));margin:0 auto}.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;color:#8c7050}.section-title{font:400 clamp(38px,5vw,67px)/1.09 var(--serif);letter-spacing:-.035em;margin:15px 0 22px}.section-copy{max-width:680px;font-size:16px;line-height:1.95;color:#655d56}.fine{font-size:13px;color:#7f766d}.rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);border:0;margin:30px 0}.gold-line{display:block;width:60px;height:2px;background:var(--gold);margin:28px 0}.btn{display:inline-flex;gap:18px;align-items:center;justify-content:space-between;text-decoration:none;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:750;min-height:52px;padding:16px 22px;border:1px solid var(--gold);transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--gold);color:#211d1a}.btn.secondary{color:var(--gold-lite);background:transparent}.btn.ink{color:var(--ink);border-color:#b99a68}.arrow{font-size:18px;line-height:1;font-weight:400}
@@ -68,10 +71,118 @@
   .wa-float .wa-brand-icon{width:23px;height:23px;flex-basis:23px}
   @media(max-width:750px){.nav-links a.nav-cta.whatsapp{width:100%;margin-top:15px;padding:13px 16px}.btn.whatsapp{justify-content:center}}
   @media(prefers-reduced-motion:reduce){.wa-float:hover,.btn.whatsapp:hover{transform:none}}
+  
+  /* V0.3 Signature Motion — luxo editorial (FMR) + ritmo tipográfico (Studio)
+     + contraste cinematográfico contido. Identidade Almeida e Mileski preservada. */
+  :root{
+    --serif:'Bodoni Moda', 'Bodoni MT', Didot, Georgia, 'Times New Roman', serif;
+    --signature-paper:#f6f6f6;
+    --signature-ink:#0a0a0a;
+    --signature-rule:#bc9c5c;
+    --signature-divide:#d9d1c4;
+  }
+  body{background:var(--signature-paper)}
+  .wrap{width:min(1220px,calc(100% - 52px))}
+  .hero{background:linear-gradient(113deg,#131212 0%,#29231f 60%,#1a1715 100%)}
+  .hero-inner{min-height:670px;gap:5%;padding-block:72px 104px}
+  .hero h1{font-size:clamp(43px,4.4vw,66px);font-weight:400;line-height:1.09;letter-spacing:-.028em;max-width:550px}
+  .hero h1 .hero-line{display:block}
+  .hero h1 em.hero-line{font-style:italic;font-weight:400;color:var(--gold-lite)}
+  .hero .overline{letter-spacing:.24em}
+  .hero-art{border:1px solid rgba(188,156,92,.55);box-shadow:0 28px 74px rgba(0,0,0,.26)}
+  .hero-photo-note{font-family:var(--sans)}
+  .section-title,.intro-quote,.partner-detail h3,.area-card h3,.contact-panel h3{font-family:var(--serif);font-weight:400;letter-spacing:-.022em}
+  .intro{background:var(--signature-paper);padding-block:126px 118px}
+  .intro-quote{font-size:clamp(35px,4.3vw,58px);line-height:1.2}
+  .intro-quote em{font-style:italic;color:#997642}
+  .eyebrow{letter-spacing:.22em}
+  .pillars{border-color:var(--signature-divide)}
+  .pillar{border-color:var(--signature-divide);padding-block:29px}
+  .pillar strong{font-family:var(--serif);font-size:27px}
+  .areas{background:#f0ede7;padding-block:116px 124px}
+  .areas-head{border-bottom:1px solid var(--signature-rule);padding-bottom:30px;margin-bottom:0}
+  .areas .section-title{margin-bottom:4px}
+  .area-grid{gap:0;border-bottom:1px solid var(--signature-divide)}
+  .area-card{background:transparent;border:0;border-bottom:1px solid var(--signature-divide);min-height:306px;padding:43px 46px 36px}
+  .area-card:nth-child(odd){border-right:1px solid var(--signature-divide)}
+  .area-card:nth-last-child(-n+2){border-bottom:0}
+  .area-card::before{top:0;left:46px;width:52px;height:1px;background:var(--signature-rule);transition:width .65s ease}
+  .area-card:hover{transform:none;background:rgba(255,255,255,.38);border-color:var(--signature-divide)}
+  .area-card:hover::before{width:calc(100% - 92px)}
+  .area-card h3{font-size:clamp(29px,3vw,38px);line-height:1.16;margin-top:28px}
+  .partners{background:var(--signature-paper);padding-block:128px}
+  .partners-head{margin-bottom:65px}
+  .partners-head .section-title{line-height:1.16}
+  .partners-head .section-title::after{content:"";display:block;width:75px;height:1px;background:var(--signature-rule);margin:29px auto 0}
+  .partners-grid{gap:25px}
+  .partner{background:#fff;border:1px solid var(--signature-divide)}
+  .partner-portrait{overflow:hidden}
+  .partner-portrait img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+  .partner:hover .partner-portrait img{transform:scale(1.035)}
+  .partner-detail{padding:38px 38px 44px}
+  .partner-detail h3{font-size:clamp(27px,3vw,35px)}
+  .approach{background:#171615;padding-block:118px}
+  .approach .section-title{font-size:clamp(42px,4.8vw,64px);line-height:1.1}
+  .step{border-color:rgba(188,156,92,.26)}
+  .step .n{font-family:var(--serif);font-size:22px}
+  .content{background:#f0ede7;padding-block:116px 126px}
+  .content-items{border-color:var(--signature-divide)}
+  .content-item{border-color:var(--signature-divide)}
+  .content-item strong{font-family:var(--serif);font-size:26px}
+  .contact{background:#151414;padding-block:118px}
+  .contact-panel{border:1px solid rgba(188,156,92,.52);box-shadow:none}
+  .contact .section-title{line-height:1.12}
+  .footer{background:#101010}
+  .btn.secondary{border-color:rgba(188,156,92,.75)}
+  .btn:not(.whatsapp){transition:background .22s ease,color .22s ease,border-color .22s ease,transform .22s ease}
+  .btn.secondary:hover{background:rgba(188,156,92,.12)}
+  .reading-progress{position:fixed;z-index:60;left:0;top:0;height:2px;width:100%;background:var(--signature-rule);transform:scaleX(0);transform-origin:left center;pointer-events:none}
+  /* O conteúdo permanece visível sem JS, em navegadores antigos e com movimento reduzido */
+  .js-motion .reveal-on-scroll{opacity:0;transform:translate3d(0,26px,0);transition:opacity .72s ease,transform .78s cubic-bezier(.22,1,.36,1);transition-delay:var(--reveal-delay,0ms)}
+  .js-motion .reveal-on-scroll.is-visible{opacity:1;transform:translate3d(0,0,0)}
+  .js-motion .area-card:nth-child(even),.js-motion .partner:nth-child(2){--reveal-delay:100ms}
+  .js-motion .step:nth-child(even),.js-motion .content-item:nth-child(even){--reveal-delay:70ms}
+  @keyframes signature-line-in{from{opacity:0;transform:translate3d(0,22px,0)}to{opacity:1;transform:none}}
+  @keyframes signature-photo-in{from{opacity:0;transform:translate3d(0,24px,0) scale(.985)}to{opacity:1;transform:none}}
+  .hero .overline{animation:signature-line-in .72s .06s both}
+  .hero h1 .hero-line:first-child{animation:signature-line-in .85s .16s both}
+  .hero h1 .hero-line:last-child{animation:signature-line-in .9s .34s both}
+  .hero p{animation:signature-line-in .8s .5s both}
+  .hero-art{animation:signature-photo-in 1.05s .28s both}
+  .hero-actions{animation:signature-line-in .75s .64s both}
+  @media(max-width:960px){
+    .hero-inner{min-height:620px}
+    .hero h1{font-size:clamp(40px,4.8vw,58px)}
+    .area-card{padding-inline:32px}
+    .area-card::before{left:32px}
+  }
+  @media(max-width:750px){
+    .wrap{width:min(100% - 34px,580px)}
+    .hero-inner{min-height:0;padding:54px 0 72px}
+    .hero h1{font-size:clamp(39px,9.4vw,58px);line-height:1.14}
+    .hero-art{margin-top:34px}
+    .intro,.areas,.partners,.approach,.content,.contact{padding-block:82px}
+    .area-grid{grid-template-columns:1fr}
+    .area-card{min-height:0;padding:33px 21px 36px;border-right:0!important;border-bottom:1px solid var(--signature-divide)!important}
+    .area-card:last-child{border-bottom:0!important}
+    .area-card::before{left:21px}
+    .area-card:hover::before{width:calc(100% - 42px)}
+    .partners-head .section-title::after{margin-inline:0}
+    .partner-detail{padding:31px 29px 35px}
+    .partners-grid{gap:21px}
+    .contact-panel{padding:29px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .hero .overline,.hero h1 .hero-line,.hero p,.hero-art,.hero-actions{animation:none!important}
+    .js-motion .reveal-on-scroll{opacity:1!important;transform:none!important;transition:none!important}
+    .partner-portrait img{transition:none!important}
+    .partner:hover .partner-portrait img{transform:none!important}
+  }
   </style>
 </head>
 <body>
   <a href="#principal" class="skip">Pular para o conteúdo</a>
+  <div class="reading-progress" aria-hidden="true"></div>
   <div class="preview-notice" role="note">PROPOSTA DE SITE · APRESENTAÇÃO ÀS SÓCIAS · INFORMAÇÕES EM VALIDAÇÃO</div>
   <header class="site-header">
     <div class="wrap nav-wrap">
@@ -82,7 +193,7 @@
   </header>
   <main id="principal">
     <section class="hero" id="inicio" aria-labelledby="heroTitle"><div class="wrap hero-inner">
-      <div><span class="overline">Almeida e Mileski · Advocacia</span><h1 id="heroTitle">O Direito exige conhecimento. <em>A confiança exige proximidade.</em></h1><p>Orientação jurídica com escuta atenta, análise responsável e uma visão integrada das relações familiares, patrimoniais e contratuais.</p><div class="hero-actions"><a class="btn primary whatsapp" href="https://wa.me/5519996837596?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Almeida%20e%20Mileski%20Advocacia%20e%20gostaria%20de%20solicitar%20um%20atendimento." target="_blank" rel="noopener noreferrer"><svg class="wa-brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.075-.149-.67-1.611-.916-2.207-.242-.579-.487-.5-.67-.51l-.57-.01c-.198 0-.52.074-.793.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.71.307 1.264.49 1.696.627.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347m-5.421 7.403h-.004a9.858 9.858 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.44 4.428-9.866 9.875-9.866a9.8 9.8 0 0 1 6.99 2.897 9.8 9.8 0 0 1 2.894 6.996c-.003 5.44-4.429 9.865-9.875 9.865m8.401-18.262A11.87 11.87 0 0 0 12.04 0C5.495 0 .17 5.324.167 11.869a11.85 11.85 0 0 0 1.584 5.95L.066 24l6.326-1.658a11.9 11.9 0 0 0 5.65 1.439h.005c6.544 0 11.87-5.324 11.873-11.87A11.8 11.8 0 0 0 20.45 3.523Z"/></svg><span>Falar pelo WhatsApp</span></a><a class="btn secondary" href="#areas">Nossas áreas <span class="arrow" aria-hidden="true">↗</span></a></div></div>
+      <div><span class="overline">Almeida e Mileski · Advocacia</span><h1 id="heroTitle"><span class="hero-line">O Direito exige conhecimento.</span> <em class="hero-line">A confiança exige proximidade.</em></h1><p>Orientação jurídica com escuta atenta, análise responsável e uma visão integrada das relações familiares, patrimoniais e contratuais.</p><div class="hero-actions"><a class="btn primary whatsapp" href="https://wa.me/5519996837596?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Almeida%20e%20Mileski%20Advocacia%20e%20gostaria%20de%20solicitar%20um%20atendimento." target="_blank" rel="noopener noreferrer"><svg class="wa-brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.075-.149-.67-1.611-.916-2.207-.242-.579-.487-.5-.67-.51l-.57-.01c-.198 0-.52.074-.793.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.71.307 1.264.49 1.696.627.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347m-5.421 7.403h-.004a9.858 9.858 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.44 4.428-9.866 9.875-9.866a9.8 9.8 0 0 1 6.99 2.897 9.8 9.8 0 0 1 2.894 6.996c-.003 5.44-4.429 9.865-9.875 9.865m8.401-18.262A11.87 11.87 0 0 0 12.04 0C5.495 0 .17 5.324.167 11.869a11.85 11.85 0 0 0 1.584 5.95L.066 24l6.326-1.658a11.9 11.9 0 0 0 5.65 1.439h.005c6.544 0 11.87-5.324 11.873-11.87A11.8 11.8 0 0 0 20.45 3.523Z"/></svg><span>Falar pelo WhatsApp</span></a><a class="btn secondary" href="#areas">Nossas áreas <span class="arrow" aria-hidden="true">↗</span></a></div></div>
       <figure class="hero-art"><img src="assets/images/cintia-karine-hero.png" alt="Composição visual ilustrativa de Cíntia Almeida e Karine Mileski no escritório, sujeita à aprovação das profissionais" width="1536" height="1024" fetchpriority="high" decoding="async"><figcaption class="hero-photo-note">Imagem de apresentação · Composição digital para validação</figcaption></figure>
       <div class="hero-index"><span>Valinhos · São Paulo</span><span>Uma atuação orientada por responsabilidade e clareza</span></div>
     </div></section>
@@ -105,6 +216,50 @@
   <a class="wa-float" href="https://wa.me/5519996837596?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Almeida%20e%20Mileski%20Advocacia%20e%20gostaria%20de%20solicitar%20um%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Conversar com Almeida e Mileski Advocacia no WhatsApp (19) 99683-7596"><svg class="wa-brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.075-.149-.67-1.611-.916-2.207-.242-.579-.487-.5-.67-.51l-.57-.01c-.198 0-.52.074-.793.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.71.307 1.264.49 1.696.627.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347m-5.421 7.403h-.004a9.858 9.858 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.44 4.428-9.866 9.875-9.866a9.8 9.8 0 0 1 6.99 2.897 9.8 9.8 0 0 1 2.894 6.996c-.003 5.44-4.429 9.865-9.875 9.865m8.401-18.262A11.87 11.87 0 0 0 12.04 0C5.495 0 .17 5.324.167 11.869a11.85 11.85 0 0 0 1.584 5.95L.066 24l6.326-1.658a11.9 11.9 0 0 0 5.65 1.439h.005c6.544 0 11.87-5.324 11.873-11.87A11.8 11.8 0 0 0 20.45 3.523Z"/></svg><span>WhatsApp</span></a>
   <script>
   (()=>{const t=document.getElementById('menuButton');const n=document.getElementById('mainNav');if(!t||!n)return;const close=()=>{n.classList.remove('open');t.setAttribute('aria-expanded','false');t.textContent='☰';t.setAttribute('aria-label','Abrir menu')};t.addEventListener('click',()=>{const open=n.classList.toggle('open');t.setAttribute('aria-expanded',String(open));t.textContent=open?'×':'☰';t.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();
+  </script>
+
+  <script>
+  /* V0.3 — progressão discreta e revelação de seções sem bibliotecas externas */
+  (() => {
+    const progress = document.querySelector('.reading-progress');
+    if (progress) {
+      let pending = false;
+      const updateProgress = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const fraction = max > 0 ? Math.min(1,Math.max(0,window.scrollY/max)) : 1;
+        progress.style.transform = 'scaleX(' + fraction + ')';
+        pending = false;
+      };
+      const onScroll = () => {
+        if (pending) return;
+        pending = true;
+        requestAnimationFrame(updateProgress);
+      };
+      window.addEventListener('scroll',onScroll,{passive:true});
+      window.addEventListener('resize',onScroll,{passive:true});
+      updateProgress();
+    }
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const blocks = [...document.querySelectorAll(
+      '.intro-grid > div, .pillars > .pillar, .areas-head > *, .area-card, ' +
+      '.partners-head > *, .partner, .approach-grid > *, .step, ' +
+      '.content-grid > *, .content-item, .contact-grid > *'
+    )];
+    if (!blocks.length) return;
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    }, {rootMargin:'0px 0px -6% 0px',threshold:0.06});
+    blocks.forEach(block => {
+      block.classList.add('reveal-on-scroll');
+      observer.observe(block);
+    });
+    document.documentElement.classList.add('js-motion');
+    window.addEventListener('pagehide',() => observer.disconnect(),{once:true});
+  })();
   </script>
 </body>
 </html>
