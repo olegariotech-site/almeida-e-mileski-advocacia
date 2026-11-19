@@ -15,7 +15,6 @@ Abrir `index.html` em qualquer navegador moderno. Não exige dependências, serv
 - `index.html`: protótipo responsivo, com HTML/CSS/JS estáticos.
 - `assets/marca-oficial.webp`: recorte otimizado do logotipo aprovado, sem redesenho.
 - `assets/monograma-oficial.webp`: recorte otimizado do monograma aprovado, sem redesenho.
-- `assets/logo-aprovado.webp`: arquivo completo da marca otimizado para web.
 - `ESCOPO-REUNIAO.md`: proposta de escopo, entregáveis e decisões a confirmar.
 - `.nojekyll`: compatibilidade com GitHub Pages quando a publicação for autorizada.
 
@@ -24,7 +23,7 @@ Abrir `index.html` em qualquer navegador moderno. Não exige dependências, serv
 - `noindex,nofollow` ativo na prévia.
 - Não há Google Analytics, Meta Pixel, formulários capturando dados ou cookies opcionais.
 - Não há publicação em domínio nem configuração de GitHub Pages.
-- Criar **novo repositório independente** antes de integrar ao GitHub; não incluir no repositório individual da Cíntia.
+- Repositório próprio `olegariotech-site/almeida-e-mileski-advocacia` criado para este projeto; não incluir no repositório individual da Cíntia.
 
 ## Dados verificados
 
