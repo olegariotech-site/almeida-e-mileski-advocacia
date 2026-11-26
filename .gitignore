@@ -1,0 +1,7 @@
+node_modules/
+dist/
+evidence/
+__pycache__/
+*.pyc
+*.zip
+.DS_Store
