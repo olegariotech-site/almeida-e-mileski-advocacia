@@ -51,10 +51,23 @@
   });
 
   const progress = document.querySelector('.progress');
+  const header = document.querySelector('.site-header');
+  const topicLinks = [...document.querySelectorAll('.context-nav nav a[href^="#"]')];
+  let activeTopic;
   let scheduled = false;
   const update = () => {
     const distance = document.documentElement.scrollHeight - innerHeight;
     if (progress) progress.style.transform = `scaleX(${distance > 0 ? Math.min(1, Math.max(0, scrollY / distance)) : 1})`;
+    if (header) header.classList.toggle('is-scrolled', scrollY > 48);
+    const near = topicLinks.filter(link => {
+      const section = document.getElementById(link.hash.slice(1));
+      return section && section.getBoundingClientRect().top <= 180;
+    }).pop();
+    if (near !== activeTopic) {
+      topicLinks.forEach(link => link.removeAttribute('aria-current'));
+      if (near) near.setAttribute('aria-current', 'location');
+      activeTopic = near;
+    }
     scheduled = false;
   };
   const queueUpdate = () => { if (!scheduled) { scheduled = true; requestAnimationFrame(update); } };
@@ -62,6 +75,17 @@
   window.addEventListener('resize', queueUpdate, {passive: true});
   document.addEventListener('toggle', queueUpdate, true);
   update();
+
+  // Avoid floating contact covering the primary contact action or the footer.
+  const floating = document.querySelector('.wa-float');
+  if (floating && 'IntersectionObserver' in window) {
+    const visible = new Set();
+    const contactObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target));
+      floating.classList.toggle('is-quiet', visible.size > 0);
+    }, {threshold: 0.15});
+    document.querySelectorAll('.actions .whatsapp, .footer').forEach(el => contactObserver.observe(el));
+  }
 
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   if ('IntersectionObserver' in window && !reduced.matches) {
