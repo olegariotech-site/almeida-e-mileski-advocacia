@@ -12,11 +12,12 @@ const {chromium}=require('playwright');
  const routes=['','o-escritorio/','as-advogadas/',...areas.map(a=>'areas/'+a.slug+'/'),'conteudos/','contato/','politica-de-privacidade/','404.html'];
  try{
   const page=await browser.newPage({reducedMotion:'reduce'});
-  const capture=async(name)=>{
+  const capture=async(name,expanded=false)=>{
    for(const img of await page.locator('img').all()){await img.scrollIntoViewIfNeeded();await img.evaluate(async el=>await el.decode());}
    await page.evaluate(()=>{document.activeElement?.blur();scrollTo(0,0)});
+   if(expanded)await page.locator('details.signature').first().evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
    await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
-   await page.screenshot({path:path.join(out,name+'.png'),fullPage:true,animations:'disabled'});
+   await page.screenshot({path:path.join(out,name+'.png'),fullPage:false,animations:'disabled'});
   };
   for(const width of [390,1366]){
    await page.setViewportSize({width,height:width===390?844:900});
@@ -25,7 +26,7 @@ const {chromium}=require('playwright');
     const name=(route||'home').replaceAll('/','-').replace(/-$/,'')+'-'+width;
     await capture(name+'-closed');
     if(await page.locator('[data-expand="true"]').count()){
-     await page.locator('[data-expand="true"]').click();await capture(name+'-open');
+     await page.locator('[data-expand="true"]').click();await capture(name+'-open',true);
     }
    }
   }

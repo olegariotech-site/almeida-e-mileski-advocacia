@@ -14,7 +14,7 @@ const {spawn}=require('node:child_process');
  const routes=['','o-escritorio/','as-advogadas/',...areas.map(a=>'areas/'+a.slug+'/'),'conteudos/','contato/','politica-de-privacidade/','404.html'];
  const summary={at:new Date().toISOString(),conditions:'localhost; Lighthouse simulated mobile default throttling; one cold navigation per route; no field data; preview noindex retained',runs:[]};
  try{
-  for(const route of routes){
+  for(const route of routes.filter(route=>!process.env.PERFORMANCE_ROUTES||JSON.parse(process.env.PERFORMANCE_ROUTES).includes(route))){
    const name=(route||'home').replaceAll('/','-').replace(/-$/,'');
    const {lhr,report}=await lighthouse('http://127.0.0.1:8765/'+route,{port:chrome.port,output:['json','html'],logLevel:'error',onlyCategories:['performance','accessibility','best-practices','seo']});
    await fs.writeFile(path.join(out,name+'.json'),report[0]);await fs.writeFile(path.join(out,name+'.html'),report[1]);

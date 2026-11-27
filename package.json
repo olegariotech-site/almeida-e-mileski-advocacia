@@ -1,7 +1,7 @@
 {
   "name": "almeida-e-mileski-preview",
   "private": true,
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Static institutional preview; no deployment automation",
   "scripts": {
     "build": "python3 scripts/build.py",

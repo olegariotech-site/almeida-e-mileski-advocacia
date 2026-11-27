@@ -1,0 +1,117 @@
+[
+  {
+    "theme": "imobiliario",
+    "origin": "Imagem original gerada com image_gen na solicitação V0.5 da direção OT. Personagens e cenários fictícios; nenhuma imagem de terceiros foi utilizada.",
+    "source_file": "exec-42846dda-cd32-4a0f-adba-bc2387e44ab8.png",
+    "source_sha256": "8a42ecec9ac014e0b4f36aecf3476ab09192cd374489068ab560c74c79991337",
+    "variants": [
+      {
+        "path": "assets/images/area-imobiliario-400.webp",
+        "bytes": 25224,
+        "sha256": "2e7a87a821663e4fc15295b2269570b6daa11e95dba17a7c0063bc711f68f210"
+      },
+      {
+        "path": "assets/images/area-imobiliario-768.webp",
+        "bytes": 84580,
+        "sha256": "5b0a87d70e5690f0affa4c9fa7c6c8416aebe1ed708fdc9d99ef67b494b5f8c4"
+      },
+      {
+        "path": "assets/images/area-imobiliario-1200.webp",
+        "bytes": 159062,
+        "sha256": "b0776a5e26c694590f9624f23d7591c9b202ea75595dea67d58033f9506f4ff9"
+      }
+    ]
+  },
+  {
+    "theme": "familia",
+    "origin": "Imagem original gerada com image_gen na solicitação V0.5 da direção OT. Personagens e cenários fictícios; nenhuma imagem de terceiros foi utilizada.",
+    "source_file": "exec-44ecc6cc-9bbb-45ce-bc2e-76441e6fe8a3.png",
+    "source_sha256": "db8b42571e8c2a60425526c0801ab410703c7c2302a69b999b2b9bf1e03dbd57",
+    "variants": [
+      {
+        "path": "assets/images/area-familia-400.webp",
+        "bytes": 12536,
+        "sha256": "678e482f8e7ac23ea7c624e8400196f834798c65ddddfeaba1de237a5e76348b"
+      },
+      {
+        "path": "assets/images/area-familia-768.webp",
+        "bytes": 31406,
+        "sha256": "74f8ad833b86d6045ccc7fd2b8d24bb372dbbd729b39e349affd0e3634937cda"
+      },
+      {
+        "path": "assets/images/area-familia-1200.webp",
+        "bytes": 59692,
+        "sha256": "3c5a4149f8a7e17a1934fa64a968bf803dd40fb609696479d66d1697d6baad74"
+      }
+    ]
+  },
+  {
+    "theme": "bancario",
+    "origin": "Imagem original gerada com image_gen na solicitação V0.5 da direção OT. Personagens e cenários fictícios; nenhuma imagem de terceiros foi utilizada.",
+    "source_file": "exec-b1356a19-68c9-4fcd-b6ba-a9ced4919ba4.png",
+    "source_sha256": "59e32900cc175a2bcbe8ba490bea7e19ce6b85bfca76b68faf0d7b90bf9500fb",
+    "variants": [
+      {
+        "path": "assets/images/area-bancario-400.webp",
+        "bytes": 11850,
+        "sha256": "a8066f5a96312b93635d4e545b8974ead43cef1df608ef77f019a29fd1f4532c"
+      },
+      {
+        "path": "assets/images/area-bancario-768.webp",
+        "bytes": 29886,
+        "sha256": "cbfaf8ffb86cc2c9f9493e4c0d560326fcb18500f788707e8ba6adc85ce017a7"
+      },
+      {
+        "path": "assets/images/area-bancario-1200.webp",
+        "bytes": 55702,
+        "sha256": "bd040465a8555fe0abea344700d121d3db63a252e5d93cbf637993a2a11c9c8d"
+      }
+    ]
+  },
+  {
+    "theme": "consumidor",
+    "origin": "Imagem original gerada com image_gen na solicitação V0.5 da direção OT. Personagens e cenários fictícios; nenhuma imagem de terceiros foi utilizada.",
+    "source_file": "exec-6f526d9e-70c1-4dd2-b4fe-0be25536ec29.png",
+    "source_sha256": "db05ffe073b90eff99ad81c25f8814d317f804ef782b064dbf9941ea0303ec48",
+    "variants": [
+      {
+        "path": "assets/images/area-consumidor-400.webp",
+        "bytes": 12668,
+        "sha256": "fe313cb10fb0619f7e9c2870fbdde91b392eec86ccb093f182231222fa6e110c"
+      },
+      {
+        "path": "assets/images/area-consumidor-768.webp",
+        "bytes": 28950,
+        "sha256": "1575e4940e1ea7667ee84592671b66146fb6d192eb1887aab895d18be828d61c"
+      },
+      {
+        "path": "assets/images/area-consumidor-1200.webp",
+        "bytes": 52616,
+        "sha256": "2254cdeed0005233646775eb63a9ecab4910d603758d459483af3121821e56ea"
+      }
+    ]
+  },
+  {
+    "theme": "previdenciario",
+    "origin": "Imagem original gerada com image_gen na solicitação V0.5 da direção OT. Personagens e cenários fictícios; nenhuma imagem de terceiros foi utilizada.",
+    "source_file": "exec-91354daa-f856-4d1f-9214-93837ff97e71.png",
+    "source_sha256": "a1c830cb9d0b86e0347384a3ef21b68b7e0c82bce93b1de5f03ea05a4ac60fa8",
+    "variants": [
+      {
+        "path": "assets/images/area-previdenciario-400.webp",
+        "bytes": 20396,
+        "sha256": "d11496c21e9cf74067ea16e5fc1a1be5f60e72208067249e683cf068da1b4e24"
+      },
+      {
+        "path": "assets/images/area-previdenciario-768.webp",
+        "bytes": 53344,
+        "sha256": "1aaa3713771957d2a7acb32cfd30ddd920be4a74535b7dc1bf2c12568a1f07bd"
+      },
+      {
+        "path": "assets/images/area-previdenciario-1200.webp",
+        "bytes": 97518,
+        "sha256": "99bbedd1ef2de58a29b9e595eb7ec97979613e3388eff20fb81d11ec8b263acd"
+      }
+    ]
+  }
+]

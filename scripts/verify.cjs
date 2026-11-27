@@ -8,9 +8,10 @@ const routes=['','o-escritorio/','as-advogadas/',
  'areas/direito-imobiliario-e-condominial/','areas/direito-de-familia-e-sucessoes/',
  'areas/direito-bancario/','areas/direito-do-consumidor/','areas/direito-previdenciario-e-assistencial/',
  'conteudos/','contato/','politica-de-privacidade/','404.html'];
-const base=process.env.PREVIEW_URL||'http://127.0.0.1:8765/';
+const testPort=process.env.TEST_PORT||'8765';
+const base=process.env.PREVIEW_URL||`http://127.0.0.1:${testPort}/`;
 (async()=>{
- const server=spawn('python3',[path.join(__dirname,'serve.py')],{stdio:['ignore','pipe','pipe']});
+ const server=spawn('python3',[path.join(__dirname,'serve.py'),'--port',testPort],{stdio:['ignore','pipe','pipe']});
  process.on('exit',()=>server.kill());
  await new Promise((resolve,reject)=>{server.stdout.once('data',resolve);server.once('error',reject);server.once('exit',code=>reject(Error('Preview server exited: '+code)));});
  const out=process.argv[2];if(!out)throw Error('Pass output directory');await fs.mkdir(out,{recursive:true});
@@ -27,7 +28,7 @@ const base=process.env.PREVIEW_URL||'http://127.0.0.1:8765/';
   const errors=[],external=new Set();
   page.on('pageerror',e=>errors.push(e.message));
   page.on('request',req=>{if(!req.url().startsWith(base)&&!req.url().startsWith('data:'))external.add(req.url());});
-  for(const width of [320,390,768,1366,1920]){
+  for(const width of [320,360,375,390,414,768,1024,1366,1920]){
    await page.setViewportSize({width,height:width<600?844:900});
    for(const route of routes){
     summary.checks.push(await check(`${width} ${route||'home'} route/assets/overflow`,async()=>{
@@ -49,14 +50,14 @@ const base=process.env.PREVIEW_URL||'http://127.0.0.1:8765/';
      }
      await page.evaluate(()=>scrollTo(0,0));
      await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
-     await page.screenshot({path:path.join(out,name),fullPage:true,animations:'disabled'});summary.screenshots.push(name);
+     await page.screenshot({path:path.join(out,name),fullPage:false,animations:'disabled'});summary.screenshots.push(name);
      await page.addScriptTag({path:axePath});
      const audit=await page.evaluate(async()=>await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}));
      summary.axe.push({route,width,violations:audit.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})),incomplete:audit.incomplete.map(v=>v.id)});
      const expand=page.getByRole('button',{name:'Expandir todas',exact:true});
      if(await expand.count()){
       await expand.click();assert.equal(await page.locator('details.signature:not([open])').count(),0);
-      const opened=`${label}-${width}-open.png`;await page.screenshot({path:path.join(out,opened),fullPage:true});summary.screenshots.push(opened);
+      const opened=`${label}-${width}-open.png`;await page.screenshot({path:path.join(out,opened),fullPage:false});summary.screenshots.push(opened);
       await page.getByRole('button',{name:'Recolher todas',exact:true}).click();assert.equal(await page.locator('details.signature[open]').count(),0);
      }
     }
@@ -107,10 +108,15 @@ const base=process.env.PREVIEW_URL||'http://127.0.0.1:8765/';
     await plain.goto(base+route);await plain.locator('#menu-toggle').click();assert.ok(await plain.locator('#mobile-nav').isVisible());await plain.locator('#menu-toggle').click();
     if(await plain.locator('details.signature').count()){
      await plain.locator('details.signature>summary').first().click();assert.equal(await plain.locator('details.signature').first().getAttribute('open'),'');
-     assert.ok((await plain.locator('.signature-body').first().innerText()).length>40);
+     await plain.locator('.signature-body').first().waitFor({state:'visible'});assert.ok((await plain.locator('.signature-body').first().innerText()).length>40);
     }
     assert.equal(await plain.locator('.accordion-tools:not([hidden])').count(),0);
    }
+  }));
+  summary.checks.push(await check('404 without JavaScript at project prefix',async()=>{
+   const miss=await plain.goto(base+'almeida-e-mileski-advocacia/inexistente/aninhada/');assert.equal(miss.status(),404);
+   const link=plain.locator('#home-link');assert.equal(await link.getAttribute('href'),'/almeida-e-mileski-advocacia/');
+   await link.click();assert.ok((await plain.locator('h1').innerText()).includes('O Direito exige conhecimento.'));
   }));
   await nojs.close();await context.close();await browser.close();result.engines.push(summary);
   await fs.writeFile(path.join(out,'verification.json'),JSON.stringify(result,null,2));
@@ -118,5 +124,5 @@ const base=process.env.PREVIEW_URL||'http://127.0.0.1:8765/';
  }
  await fs.writeFile(path.join(out,'verification.json'),JSON.stringify(result,null,2));
  server.kill();
- if(result.failures.length)process.exitCode=1;
+ if(result.failures.length||result.engines.some(e=>e.blocked))process.exitCode=1;
 })().catch(e=>{console.error(e);process.exit(1)});

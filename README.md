@@ -1,4 +1,4 @@
-# Almeida e Mileski Advocacia — V0.4 Signature Legal Experience
+# Almeida e Mileski Advocacia — V0.5 Signature Legal Refinement
 
 Prévia institucional estática desenvolvida pela OLEGARIO TECH. **Branch de desenvolvimento; sem autorização de merge, deploy ou indexação.**
 
@@ -67,7 +67,7 @@ npx playwright install chromium firefox webkit
 npm test -- /caminho/para/evidencias
 ```
 
-O verificador inicia e encerra seu próprio servidor local, testa as 12 páginas nas larguras 320, 390, 768, 1366 e 1920, registra auditorias axe, navegação sem JS, teclado, movimento reduzido, links, dois prefixos, contatos e ausência de rastreamento. Para usar um Chromium disponível no ambiente, informar `CHROMIUM_EXECUTABLE`. Para usar o binário empacotado para ambientes de teste, informar `SPARTICUZ_CHROMIUM=1`. A versão e as condições reais de cada navegador devem constar no relatório; metas Lighthouse e WCAG não constituem certificação automática.
+O verificador inicia e encerra seu próprio servidor local, testa as 12 páginas nas larguras 320, 360, 375, 390, 414, 768, 1024, 1366 e 1920, registra auditorias axe, navegação sem JS, teclado, movimento reduzido, links, dois prefixos, contatos e ausência de rastreamento. Para usar um Chromium disponível no ambiente, informar `CHROMIUM_EXECUTABLE`. Para usar o binário empacotado para ambientes de teste, informar `SPARTICUZ_CHROMIUM=1`. A versão e as condições reais de cada navegador devem constar no relatório; metas Lighthouse e WCAG não constituem certificação automática.
 
 ```bash
 npm run benchmark -- /caminho/para/evidencias-de-pesquisa
@@ -77,7 +77,7 @@ O benchmarking registra o que foi efetivamente observado e suas limitações. Re
 
 ## Rollback
 
-Baseline: `d734034b6a6b7a06d35d1bf0cfdbbdd37b25d690`. Referência remota preservada: `snapshot/v03-before-v04`. A `main` permanece nesse baseline durante o desenvolvimento.
+Baseline publicado: `8ced3f897b31189e63730131a465e8ba139fcb9d`. Snapshot local V0.4: `snapshot/v04-before-v05`. O snapshot remoto V0.3 permanece em `snapshot/v03-before-v04`. Código-fonte V0.4: `06c5e1d3bb80d1bdbdd2d07c881e0941a37f91a5`. A publicação V0.4 permanece intacta durante o desenvolvimento isolado da V0.5.
 
 Nesta etapa, rollback significa descartar ou fechar a branch/PR de desenvolvimento; não há implantação para reverter. Se uma futura publicação for autorizada, preservar o artefato implantado e o SHA antes da operação. Para recuperar os arquivos da V0.3 em um checkout separado:
 
@@ -86,3 +86,23 @@ git worktree add ../almeida-mileski-v03 snapshot/v03-before-v04
 ```
 
 Não executar reset forçado da main ou comandos de publicação como parte desta entrega.
+
+## Refinamentos V0.5
+
+HERO compacto com fotografia antecipada no celular; navegação de 14 px com marca compacta durante a rolagem sem mudança da altura do cabeçalho; cinco aberturas fotográficas originais; accordions nativos com estados dourados; perfis editoriais; rodapé institucional completo. A repetição de formação da Mileski e a repetição do índice de áreas na Home foram retiradas, mantendo o conteúdo jurídico integral.
+
+`content/images-provenance.json` registra os cinco temas gerados com autorização da direção, hashes e variantes WebP de 400/768/1200 px. Legendas identificam imagens ilustrativas e personagens fictícios. As imagens das profissionais não foram alteradas. Orçamento: até 160 kB por variante temática. O gerador inclui somente a allowlist de `dist/`.
+
+A 404 usa por padrão o prefixo atual do GitHub Pages, inclusive sem JS. Para preparar uma futura publicação na raiz de outro domínio, usar `python3 scripts/build.py --base-path /`; isso não altera configuração de hospedagem nem publica o site. A prévia local simula ambos os prefixos.
+
+A transição de altura usa CSS nativo de `details` onde suportado; os demais navegadores preservam expansão nativa e animação discreta do conteúdo. Sem JS, menu e conteúdo continuam disponíveis. `prefers-reduced-motion` desativa movimentos não essenciais. O WhatsApp flutuante cede espaço quando o contato principal ou o rodapé estão visíveis.
+
+`node scripts/refinement-check.cjs /caminho/evidencias` verifica requisitos específicos de HERO, toque, cabeçalho e contato. A saída de um navegador bloqueado faz o verificador retornar falha; isso não é contabilizado como aprovação. Nenhum dado de campo de INP é declarado.
+
+### Evidências desta revisão privada
+
+Matriz principal: 348 verificações (116 em cada engine), em Chromium 158, Firefox 159 e WebKit 27.2. Complementos: 54 verificações de enquadramento/layout, 10 refinamentos e 12 verificações de retratos/âncoras. São 424 verificações, mais a checagem estática e de empacotamento. Axe: 24 auditorias nas duas larguras de captura, sem violações detectadas.
+
+Lighthouse local comparável: V0.4 entre 98 e 100; V0.5 final entre 99 e 100. Acessibilidade e boas práticas 100, CLS zero, maior LCP final 2,18 s. Há aumentos de LCP nas áreas que passaram a ter fotografia e uma variação de 100 para 99 na Home; o comparativo por rota acompanha a revisão, sem aprovação automática para publicação. Os retratos ganharam variante proporcional de 672 px para evitar a transferência do arquivo de 800 px na tela móvel de referência. Arquivos anteriores das profissionais permanecem idênticos.
+
+A branch contém os fontes, enquanto a main publicada contém somente a distribuição. Após eventual autorização, a preparação para publicação exige um commit adicional com o conteúdo elegível de dist na raiz, preservando o commit-fonte, como na V0.4. Não integrar esta árvore de fontes diretamente à main servida pelo Pages.
