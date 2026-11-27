@@ -1,0 +1,305 @@
+[
+  {
+    "slug": "direito-imobiliario-e-condominial",
+    "title": "Direito Imobiliário e Condominial",
+    "description": "Imóveis, contratos, locações e relações de condomínio.",
+    "professional": "Cíntia Pereira Almeida Gomes",
+    "intro": "A Almeida e Mileski Advocacia presta assessoria jurídica em questões imobiliárias e condominiais, com atuação voltada à prevenção e à solução de conflitos relacionados a imóveis, contratos, locações e relações de condomínio. A orientação jurídica considera as particularidades de cada negócio e os direitos e deveres envolvidos.",
+    "groups": [
+      {
+        "title": "Direito de locação",
+        "items": [
+          "Elaboração, análise e revisão de contratos de locação residencial e comercial.",
+          "Orientação jurídica a proprietários, locadores, inquilinos e administradores de imóveis.",
+          "Análise de garantias locatícias, reajustes, encargos, responsabilidades e obrigações contratuais.",
+          "Notificações extrajudiciais, cobrança de aluguéis e encargos e negociação de débitos.",
+          "Ações de despejo, cobrança, execução e consignação de aluguéis, quando cabíveis.",
+          "Ações revisionais e renovatórias de locação, observados os requisitos legais.",
+          "Orientação em situações de inadimplemento, rescisão, entrega de chaves, danos ao imóvel e discussão sobre reparos."
+        ]
+      },
+      {
+        "title": "Compra, venda e regularização de imóveis",
+        "items": [
+          "Análise jurídica de documentos e contratos de compra e venda.",
+          "Orientação em negociações imobiliárias e elaboração ou revisão de instrumentos contratuais.",
+          "Questões relacionadas a sinal, arras, atraso na entrega, rescisão e inadimplemento contratual.",
+          "Regularização documental e registral de imóveis.",
+          "Usucapião judicial ou extrajudicial, conforme os requisitos legais.",
+          "Adjudicação compulsória e questões relacionadas à transferência da propriedade.",
+          "Conflitos possessórios e questões envolvendo posse, propriedade e uso do imóvel."
+        ]
+      },
+      {
+        "title": "Direito condominial",
+        "items": [
+          "Assessoria jurídica a condomínios, síndicos, administradoras e condôminos.",
+          "Análise e revisão de convenções e regimentos internos.",
+          "Orientação sobre assembleias, deliberações, quóruns e cumprimento das regras condominiais.",
+          "Cobrança de cotas condominiais e orientação em situações de inadimplência.",
+          "Conflitos entre condôminos, uso de áreas comuns, obras, reformas, barulho e responsabilidades.",
+          "Análise de contratos e questões jurídicas relacionadas à administração condominial."
+        ]
+      }
+    ],
+    "help": "Cada questão imobiliária exige análise dos documentos, do contrato e das circunstâncias concretas. O escritório pode atuar de forma preventiva, por meio de orientação e negociação, ou na adoção das medidas extrajudiciais e judiciais adequadas."
+  },
+  {
+    "slug": "direito-de-familia-e-sucessoes",
+    "title": "Direito de Família e Sucessões",
+    "description": "Relações familiares, sucessões e organização do patrimônio.",
+    "professional": "Cíntia Pereira Almeida Gomes",
+    "intro": "A Almeida e Mileski Advocacia oferece orientação jurídica em questões familiares e sucessórias, buscando conduzir cada situação com responsabilidade, discrição e atenção às particularidades das pessoas envolvidas. A atuação pode ocorrer pela via consensual, extrajudicial ou judicial, conforme a natureza do caso e os requisitos legais.",
+    "groups": [
+      {
+        "title": "Casamento, divórcio e união estável",
+        "items": [
+          "Divórcio consensual e litigioso.",
+          "Divórcio extrajudicial, quando legalmente permitido.",
+          "Reconhecimento e dissolução de união estável.",
+          "Definição e discussão do regime de bens.",
+          "Partilha de bens, dívidas e direitos patrimoniais.",
+          "Elaboração e análise de pactos antenupciais e contratos de convivência."
+        ]
+      },
+      {
+        "title": "Filhos, guarda e alimentos",
+        "items": [
+          "Fixação, revisão e exoneração de pensão alimentícia.",
+          "Ações de cobrança e execução de alimentos.",
+          "Definição de guarda e regulamentação da convivência familiar.",
+          "Orientação sobre guarda compartilhada e responsabilidades parentais.",
+          "Discussões envolvendo mudança de domicílio, convivência e cumprimento de acordos.",
+          "Investigação e reconhecimento de paternidade ou maternidade.",
+          "Análise de situações que envolvam possível alienação parental, conforme os fatos e a legislação aplicável."
+        ]
+      },
+      {
+        "title": "Sucessões e planejamento patrimonial",
+        "items": [
+          "Inventário e partilha judiciais ou extrajudiciais, conforme os requisitos legais.",
+          "Arrolamento, sobrepartilha e regularização da transmissão de bens.",
+          "Orientação a herdeiros, meeiros e interessados na sucessão.",
+          "Elaboração e orientação sobre testamentos.",
+          "Doações e organização da transmissão patrimonial em vida.",
+          "Planejamento sucessório e análise de alternativas para organização do patrimônio familiar."
+        ]
+      },
+      {
+        "title": "Responsabilidade civil nas relações familiares",
+        "items": [
+          "Análise de situações que possam envolver responsabilidade civil no âmbito familiar, inclusive alegações de abandono afetivo, sempre conforme os requisitos legais e as provas disponíveis."
+        ]
+      }
+    ],
+    "help": "O escritório busca esclarecer direitos, deveres e alternativas possíveis, priorizando soluções consensuais quando adequadas, sem deixar de avaliar as medidas judiciais necessárias para a proteção dos interesses envolvidos."
+  },
+  {
+    "slug": "direito-bancario",
+    "title": "Direito Bancário",
+    "description": "Contratos, crédito, cobranças e operações bancárias.",
+    "professional": "Cíntia Pereira Almeida Gomes e sócia Mileski",
+    "intro": "A Almeida e Mileski Advocacia atua em questões jurídicas relacionadas a contratos e serviços bancários, operações de crédito, financiamentos, cobranças, fraudes e endividamento. A análise considera o contrato, a operação realizada, os encargos aplicados e a documentação de cada caso. Nem toda cobrança ou taxa é irregular: é necessário verificar sua legalidade e adequação às normas aplicáveis.",
+    "groups": [
+      {
+        "title": "Contratos bancários, juros e cobranças",
+        "items": [
+          "Análise e revisão de contratos de empréstimos, financiamentos e outras operações de crédito.",
+          "Verificação de juros, tarifas, encargos, seguros e demais valores cobrados.",
+          "Análise de cobranças não reconhecidas ou de serviços não contratados.",
+          "Avaliação de possíveis cláusulas abusivas e práticas contratuais irregulares.",
+          "Orientação sobre quitação antecipada, liquidação e evolução do saldo devedor."
+        ]
+      },
+      {
+        "title": "Empréstimos consignados e descontos",
+        "items": [
+          "Análise de empréstimos consignados e descontos realizados em folha de pagamento ou benefício.",
+          "Verificação de contratos não reconhecidos ou operações contestadas pelo consumidor.",
+          "Análise de cartão de crédito consignado, inclusive RMC e RCC.",
+          "Orientação sobre reserva de margem consignável, descontos recorrentes e informações contratuais.",
+          "Avaliação de possíveis irregularidades na contratação e na prestação de informações."
+        ]
+      },
+      {
+        "title": "Endividamento e renegociação",
+        "items": [
+          "Análise de dívidas bancárias e contratos em atraso.",
+          "Orientação para negociação e renegociação de empréstimos e financiamentos.",
+          "Avaliação de alternativas jurídicas para reorganização de obrigações financeiras.",
+          "Atuação em situações de superendividamento, observados os requisitos legais.",
+          "Análise de cobranças, encargos e condições oferecidas em acordos."
+        ]
+      },
+      {
+        "title": "Fraudes e operações bancárias não reconhecidas",
+        "items": [
+          "Orientação em casos de empréstimos, compras, transferências ou movimentações não reconhecidas.",
+          "Análise de fraudes envolvendo PIX e outros meios de pagamento.",
+          "Contestação de operações e avaliação da responsabilidade dos envolvidos.",
+          "Orientação sobre medidas administrativas e judiciais cabíveis."
+        ]
+      },
+      {
+        "title": "Financiamentos e crédito para pessoas e empresas",
+        "items": [
+          "Análise de contratos de financiamento de veículos e imóveis.",
+          "Orientação em situações de inadimplemento, cobrança e discussão contratual.",
+          "Análise de operações de crédito empresarial, capital de giro e renegociação de dívidas bancárias.",
+          "Avaliação de garantias, encargos e obrigações assumidas em contratos de crédito."
+        ]
+      },
+      {
+        "title": "Negativação e cobrança bancária",
+        "items": [
+          "Análise de inscrições em cadastros de inadimplentes relacionadas a dívidas bancárias.",
+          "Orientação sobre cobranças contestadas, dívidas quitadas ou valores não reconhecidos.",
+          "Avaliação de medidas para contestação de cobranças e correção de informações, quando cabíveis."
+        ]
+      }
+    ],
+    "help": "A atuação pode envolver análise documental, orientação preventiva, tratativas extrajudiciais, reclamações perante os canais adequados e medidas judiciais, quando justificadas. A viabilidade de revisão, restituição ou indenização depende das circunstâncias e das provas de cada caso."
+  },
+  {
+    "slug": "direito-do-consumidor",
+    "title": "Direito do Consumidor",
+    "description": "Produtos, serviços e proteção nas relações de consumo.",
+    "professional": "Sócia Mileski",
+    "intro": "A Almeida e Mileski Advocacia presta orientação jurídica em conflitos entre consumidores e fornecedores de produtos e serviços. A atuação busca identificar falhas na prestação de serviços, cobranças indevidas, descumprimento de ofertas e outras práticas que possam violar os direitos assegurados pela legislação consumerista.",
+    "groups": [
+      {
+        "title": "Cobranças indevidas e problemas contratuais",
+        "items": [
+          "Análise de cobranças por serviços não contratados ou valores contestados.",
+          "Orientação sobre cláusulas contratuais potencialmente abusivas.",
+          "Descumprimento de ofertas, condições anunciadas e obrigações assumidas pelo fornecedor.",
+          "Cancelamento de serviços, rescisão contratual e cobranças posteriores ao cancelamento.",
+          "Avaliação de pedidos de restituição de valores, conforme os requisitos legais."
+        ]
+      },
+      {
+        "title": "Negativação indevida e restrições de crédito",
+        "items": [
+          "Análise de inscrições em cadastros de inadimplentes por dívidas não reconhecidas.",
+          "Orientação em casos de manutenção de restrição após pagamento ou quitação.",
+          "Contestação de cobranças relacionadas a contratos inexistentes ou contestados.",
+          "Análise de protestos e outras restrições que possam ser indevidas.",
+          "Avaliação de eventual reparação por danos, conforme as circunstâncias e a prova do caso."
+        ]
+      },
+      {
+        "title": "Falhas na prestação de serviços",
+        "items": [
+          "Problemas com telefonia, internet e serviços de comunicação.",
+          "Falhas no fornecimento de serviços essenciais, como água e energia elétrica.",
+          "Interrupções, cobranças incorretas e descumprimento de obrigações do fornecedor.",
+          "Problemas com instituições de ensino, prestadores de serviços e empresas em geral.",
+          "Orientação em situações de atendimento inadequado e ausência de solução administrativa."
+        ]
+      },
+      {
+        "title": "Produtos, compras e comércio eletrônico",
+        "items": [
+          "Produtos com defeito ou vício e dificuldades para obter solução.",
+          "Atraso ou não entrega de produtos adquiridos.",
+          "Problemas em compras realizadas pela internet.",
+          "Trocas, devoluções, reembolsos e cumprimento da oferta.",
+          "Análise da responsabilidade de fabricantes, comerciantes e demais fornecedores."
+        ]
+      },
+      {
+        "title": "Práticas abusivas e proteção contratual",
+        "items": [
+          "Análise de práticas comerciais que possam contrariar os direitos do consumidor.",
+          "Orientação sobre publicidade, ofertas e informações insuficientes ou inadequadas.",
+          "Análise de contratos de consumo e obrigações assumidas pelas partes.",
+          "Negociação e adoção de medidas administrativas ou judiciais, quando cabíveis."
+        ]
+      },
+      {
+        "title": "Planos de saúde e seguros",
+        "items": [
+          "Análise de questões relativas à cobertura de exames, cirurgias, medicamentos de alto custo e tratamentos, bem como a reajustes contestados e cancelamento unilateral. Medidas administrativas ou judiciais dependem da análise individual dos fatos, documentos e requisitos legais."
+        ]
+      },
+      {
+        "title": "Problemas com voos e turismo",
+        "items": [
+          "Assistência em casos de atraso ou cancelamento de voos, extravio de bagagens, overbooking e reembolso de pacotes turísticos."
+        ]
+      }
+    ],
+    "help": "Cada relação de consumo deve ser examinada à luz dos documentos, das condições da contratação e da conduta do fornecedor. O escritório avalia as alternativas disponíveis para buscar a solução adequada, pela via administrativa, extrajudicial ou judicial."
+  },
+  {
+    "slug": "direito-previdenciario-e-assistencial",
+    "title": "Direito Previdenciário e Assistencial",
+    "description": "Planejamento, benefícios do INSS e direitos assistenciais.",
+    "professional": "Sócia Mileski",
+    "intro": "A Almeida e Mileski Advocacia oferece assessoria jurídica em questões previdenciárias e assistenciais, auxiliando segurados, aposentados, pensionistas e pessoas que buscam benefícios junto ao INSS. A atuação envolve análise do histórico contributivo, orientação sobre requisitos legais, preparação de requerimentos e avaliação de medidas administrativas e judiciais.",
+    "groups": [
+      {
+        "title": "Aposentadorias e planejamento previdenciário",
+        "items": [
+          "Aposentadoria por idade urbana e rural.",
+          "Análise das regras de transição e do tempo de contribuição.",
+          "Aposentadoria especial, observados os requisitos legais e a comprovação da exposição a agentes nocivos.",
+          "Aposentadoria da pessoa com deficiência.",
+          "Aposentadoria do professor, conforme as regras aplicáveis.",
+          "Planejamento previdenciário e análise de cenários para identificar possibilidades e requisitos.",
+          "Revisão de aposentadoria e análise de possíveis divergências no cálculo do benefício."
+        ]
+      },
+      {
+        "title": "Benefícios por incapacidade e auxílio-acidente",
+        "items": [
+          "Auxílio por incapacidade temporária (antigo auxílio-doença).",
+          "Aposentadoria por incapacidade permanente.",
+          "Auxílio-acidente, quando preenchidos os requisitos legais.",
+          "Análise de benefícios negados, cessados ou não prorrogados.",
+          "Orientação sobre documentação médica e avaliação pericial.",
+          "Pedidos de concessão ou restabelecimento de benefícios, conforme o caso."
+        ]
+      },
+      {
+        "title": "Pensão por morte e salário-maternidade",
+        "items": [
+          "Requerimento e análise de pensão por morte.",
+          "Comprovação da condição de dependente, conforme as regras previdenciárias.",
+          "Análise de indeferimentos e cessação de pensão.",
+          "Orientação e requerimento de salário-maternidade.",
+          "Análise de qualidade de segurado e demais requisitos aplicáveis."
+        ]
+      },
+      {
+        "title": "Benefício assistencial – BPC/LOAS",
+        "items": [
+          "Benefício assistencial à pessoa idosa que atenda aos requisitos legais.",
+          "Benefício assistencial à pessoa com deficiência.",
+          "Análise de indeferimentos, suspensões e cancelamentos.",
+          "Orientação sobre avaliação social, avaliação da deficiência, renda familiar e CadÚnico.",
+          "Análise de medidas administrativas e judiciais cabíveis."
+        ]
+      },
+      {
+        "title": "Revisões, contribuições e questões cadastrais",
+        "items": [
+          "Análise de benefícios e possíveis divergências nos cálculos.",
+          "Reconhecimento e inclusão de períodos de contribuição ou vínculos de trabalho.",
+          "Análise de atividade rural e de atividade especial, conforme a documentação disponível.",
+          "Acerto de informações no Cadastro Nacional de Informações Sociais (CNIS).",
+          "Orientação sobre contribuições previdenciárias e qualidade de segurado.",
+          "Recursos administrativos e medidas judiciais contra decisões do INSS, quando cabíveis."
+        ]
+      },
+      {
+        "title": "Auxílio-reclusão e outros direitos",
+        "items": [
+          "Análise dos requisitos para concessão de auxílio-reclusão aos dependentes do segurado.",
+          "Orientação sobre outros benefícios previdenciários e assistenciais, conforme a legislação vigente."
+        ]
+      }
+    ],
+    "help": "Cada caso exige análise do histórico contributivo, dos documentos pessoais, profissionais e médicos, quando pertinentes, e dos requisitos legais vigentes. O escritório pode atuar no planejamento, no requerimento administrativo, em recursos, revisões e medidas judiciais cabíveis. O BPC/LOAS é benefício assistencial e não exige contribuições previdenciárias, mas possui requisitos próprios."
+  }
+]
